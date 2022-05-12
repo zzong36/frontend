@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이력서</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <!-- 가운데 정렬 -->
+            <center>Resume</center>
+        </h1>
+    </header>
+
+    <section>
+        <p>
+            <!-- 이력서 사진 삽입, 이미지를 불러오지 못한다면 no image라는 문구 띄움-->
+        <figure>
+            <img src="sample.jpg " alt="no image">
+        </figure>
+
+        <!-- 기본 인적사항 기입 항목 -->
+        <article id="profile1">
+            <!-- 이름 입력-->
+            <table border="1">
+                <tr>
+                    <form action="" method="get">
+                        <td>
+                            <label for="name">이름</label>
+                            <!-- 화면 실행 시 커서가 이름에 있도록 설정 -->
+                        </td>
+                        <td>
+                            <input id="name" name="name" type="text" autofocus required>
+                        </td>
+                    </form>
+                </tr>
+            </table>
+
+            <!-- 이메일 입력 -->
+            <form action="" method="get"></form>
+            <label for="email">이메일: </label>
+            <input id="email" name="email" type="email" placeholder="hello@email.com">
+            <br>
+            <br>
+
+            <!-- 활용가능 기술 입력 -->
+            <form action="" method="get"></form>
+            <label for="skill">기술: </label>
+            <input id="skill" name="skill" type="text" placeholder="ex) HTML, CSS, javascript">
+            <br>
+            <br>
+
+            <!-- 경력사항 입력 -->
+            <table>
+                <form action="" method="get">
+                <tr>
+                    <td> <label for="career">경력1: </label></td>
+                    <td><label for="stardate">입사일:</label></td>
+                    <td><label for="stardate">퇴사일:</label></td>
+                   
+                </tr>
+                <tr>
+                    <td> <input id="career" name="career" type="text" placeholder="회사명"></td>
+                    <td><input type="date"></td>
+                    <td><input type="date"></td>
+                </tr>
+            
+            </form>
+            </table>
+
+            <!-- 이메일 입력 -->
+            <form action="" method="get"></form>
+            <label for="email">이메일: </label>
+            <input id="email" name="email" type="email" placeholder="hello@email.com">
+            <br>
+            <br>
+
+            <!-- 이메일 입력 -->
+            <form action="" method="get"></form>
+            <label for="email">이메일: </label>
+            <input id="email" name="email" type="email" placeholder="hello@email.com">
+            <br>
+            <br>
+
+            <!-- 이메일 입력 -->
+            <form action="" method="get"></form>
+            <label for="email">이메일: </label>
+            <input id="email" name="email" type="email" placeholder="hello@email.com">
+            <br>
+
+        </article>
+        </p>
+    </section>
+
+
+
+
+</body>
+
+</html>
