@@ -1,0 +1,81 @@
+/*
+웹 브라우저의 초기 속성을 지정해준다.
+모든 태그에 기본저긍로 적용이 된다. 
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body에 background 색상을 지정해주겠습니다 */
+
+body {
+    background-color: #5F7161;
+
+    /* 현재 상태에서 (수평)에서 중앙에 위치 */
+
+    display: flex;
+    justify-content: center;
+
+    /* 수딕 상태에서도 중앙에 위치 */
+    align-items: center;
+
+    /* 수직의 위치 상태를 적용하기 위해 height를 준다 
+    %: 경우에 따라 100%가 안 되기도 한다.
+    vh: 무조건 저체를 기준으로 적용된다.
+    */
+    height: 100vh;
+
+}
+
+/* 버튼 기본속성 정의 */
+.btn {
+    /* 버튼 배경 비움 */
+    background: none;
+
+    /* 흰색 선 */
+    border: 2px solid #FFF5EB;
+    font-size: 35px;
+    color: #FFF5EB;
+
+    /* 패딩 적용 */
+    padding: 20px 40px;
+
+    /* 넓이 지정 */
+    width: 250px;
+
+    /* 마우스를 올렸을 때 손가락 모양으로 변경 */
+    cursor: pointer;
+
+    /* 버튼 안에 적용되기 위해 여기에 작성 */
+    position: relative
+}
+
+/* 포지션이 절대 위치로 top0이 되도록 적용 */
+.btn-swap span {
+    /* 절대위치 */
+    position: absolute;
+    top: 0;
+    
+    /* 왼쪽 정렬 */
+    left: 0;
+
+    /* 색상 */
+    background:#D0C9C0 ;
+    padding: 20px 40px;
+    width: 100%;
+
+    /* 불투명도(opacity) */
+    opacity: 0;
+
+    /* 애니메이션 효과 */
+    transition: opacity 0.5s;
+}
+
+/* 버튼 위에 마우스 올릴 때 PolyTech를 보여주기 */
+.btn-swap:hover span{
+    opacity: 1;
+
+}
