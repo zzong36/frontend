@@ -123,6 +123,8 @@ a{
 
         /* 메뉴 목록도 아래로 정렬되게 바꾼다 */
         .navbar_menu{
+            display: none;
+            
             flex-direction: column;
             /* 반대쪽 아이템즈를 사용해서 center를 맞춰준다 */
             align-items: center;
@@ -141,6 +143,7 @@ a{
 
         /* .navbar_icons 방향을 바꾸지 않은 상태(현상태)에서 중간으로 가도록 설정해준다 */
         .navbar_icons{
+            display: none;
             /* 지금 현재 축에서 중간으로 이동 */
             justify-content: center;
 
