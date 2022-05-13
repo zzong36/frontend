@@ -99,6 +99,7 @@ a{
     right: 40px;
     font-size: 24px;
     color:#F8B400;
+    display: none;
 
     /* 햄버거빵이 기본으로 안보이도옥 해준다 */
 }
@@ -150,6 +151,11 @@ a{
         /* 사이즈가 작아지면 햄버빵이 보이게 한다 */
         .navbar_togleBtn{
             display: block;
+        }
+
+        .navbar_menu.active,
+        .navbar_icons.active{
+            display: flex;
         }
 
     }
