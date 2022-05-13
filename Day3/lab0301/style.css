@@ -1,0 +1,42 @@
+.navibar{
+    /* 
+    플랙스 박스로 만들어준다.
+    */
+    display: flex;
+    /* 
+    옆으로 정렬해주기
+    space betwen 은 컨텐츠 사이에 중간중간 스페이스를 넣어주는 역할을 한다.
+    현재 있는 축(수평)에서 할려면 
+    justify-content
+    */
+    justify-content: space-between;
+    
+    /* 
+    수직으로 정렬해보겠습니다. 
+    현재 주어직 축과 반대방향으로 적용시킨다.(수직)
+    수직의 중앙으로 맞춰준다. 
+    */
+
+    align-items: center;
+
+    /* 색상을 입혀보자 */
+    background-color: #1A3C40;
+
+    /* 전체적으로 모서리가 붙어 있어서 padding을 준다.*/
+    padding: 12px 12px;
+}
+
+/* 원하지 않는 공백을 지워버린다 */
+body{
+    margin: 0;
+}
+
+/* 
+a 태그에 텍스트 및 줄과 색상이 있는데
+text-decoration으로 없애주자
+*/
+
+a{
+    text-decoration: none;
+    color: white;
+}
