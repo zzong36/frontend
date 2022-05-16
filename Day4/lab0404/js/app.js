@@ -27,10 +27,10 @@ JavaScript에서 중요한 것은 객체를 구성하는 모양
 // console.log(coffeeType);
 // console.log(coffeePrice);
 
-let coffee = {
-    type: "Americano",
-    price: 4000,
-}
+// let coffee = {
+//     type: "Americano",
+//     price: 4000,
+// }
 
 // 리터럴 객체에서 값을 가져오는 방법
 // console.log(coffee.type);
@@ -53,14 +53,23 @@ let coffee = {
 //        const PI = 3.141592, const Local_URL = "https://www.daum.net";
 
 
-const coffee1={
-    type: "capuccino",
-    price: 6000
-}
+// const coffee1={
+//     type: "capuccino",
+//     price: 6000
+// }
 
 // javascript를 사용할 때 마지막 문장에는 ';'를 붙여준다.
 // JavaScript에서 ';'를 사용하지 않고 쓰기도 하는데 그럴 경우에는 맨 마지막 문장에서 엔터를 쳐서 작성하면 된다.
 // 그러면 다음 문장으로 인식한다.
 
 // 기본적으로 성능 때문에 javaScript의 용량을 최소로 줄이는 경우가 발생할 수 있기 때문에 마지막에는 ';'를 붙이는 것이 좋다.
-console.log("하이!")
+// console.log("하이!")
+
+// JavaScript에서는 대소문자를 반드시 구분해야 한다.
+// console.log("sleep")
+// Console.log("sleep")
+
+// 한 줄 주석
+/** 
+ * API Document 주석
+*/
