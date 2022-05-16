@@ -1,18 +1,20 @@
 /*  1. 필요없는 속성 초기화 */
 
-html, body{
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 /*  h태그와 p태그는 기본적으로 위 아래 margin 가지고 있는데, margin을 초기화 시켜줘여 함 */
-h1, p{
+h1,
+p {
     margin: 0;
 }
 
 /* 5. a 태그의 속성 정의 */
 
-a{
+a {
     /* 부모로부터 상속 값 적용 */
     color: inherit;
     /* 링크 표시 없애줌 */
@@ -24,7 +26,7 @@ vw와 vh와의 차이점
 vw와 vh: 가로 세로 지금 가지고 있는 크기의 최대치
 %: 마진 빼고 100%가 되기에 정확하게 전체를 다 사용할 경우 vw, vh 사용 
 */
-#main{
+#main {
     background: url(ocean.jpg) no-repeat;
     /* 화면이 꽉 참 cover: 사이즈가 깨지지 않고 가져옴*/
     background-size: cover;
@@ -34,9 +36,19 @@ vw와 vh: 가로 세로 지금 가지고 있는 크기의 최대치
 }
 
 /* 4. 컨텐츠 텍스트의 색상 흰색으로 */
-#contents{
+#contents {
     color: white;
-    font-family: 'Koulen', cursive, 'Roboto Condensed', sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 20px;
-}
 
+    /* 절대적 좌표로 지정 */
+    position: absolute;
+    width: 100%;
+    /* top:50%만 줄 경우 시작지점이 50%이고 요소(앨리먼트)가 50% 지점이 오는 것이 아니다. */
+    top: 50%;
+    /* thus, 요소 자체가 중앙에 오기 위해서*/
+    transform: translateY(-50%);
+    /* 텍스트 중앙 */
+    text-align: center;
+
+}
