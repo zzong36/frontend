@@ -64,19 +64,20 @@
 //     // 값도 같고, 타입도 같아서 아주 완벽하게 똑같을 때 비교하는 값이 ===(동치): 무조건 3개를 쓸 것
 //     console.log(list3===list4); // false로 나옴
     
-//     // Destructuring: 비구조화 할당
-//     // 변수에 필요한 값을 할당하는데 유용한 방법
-//     let data = ["crong", "coffee", "bat"];
+    // Destructuring: 비구조화 할당
+    // 변수에 필요한 값을 할당하는데 유용한 방법
+    let data = ["crong", "coffee", "bat"];
     
-//     // 데이터를 가져오려면
-//     let data1 = data[0];
-//     let data2 = data[2];
-//     // console.log(data1, data2);
+    // 데이터를 가져오려면
+    let data1 = data[0];
+    let data2 = data[2];
+    // console.log(data1, data2);
     
-//     // Destructuring은 이렇게 처리
-//     // 왜 배열 자체가 저장되지 않는거지? 배열을 저장하려면?
-//     let [data3, data4] = data;
-//     console.log(data3, data4);
+    // // Destructuring은 이렇게 처리
+    // // 왜 배열 자체가 저장되지 않는거지? 배열을 저장하려면?
+    // let [data3, , data5] = data;
+    // // console.log(data3, dsata4, data5);
+    // console.log(data3, data5);
 
     // // Destructuring object
     // let obj = {
@@ -91,12 +92,12 @@
     // let{name: myName, age: myAge} = obj;
     // console.log(myName, myAge);
 
-    // 함수를 호출하는 방법 추가
-    let obj = {};
-    obj.m = function(){
-        console.log("함수")
+    // // 함수를 호출하는 방법 추가
+    // let obj = {};
+    // obj.m = function(){
+    //     console.log("함수")
 
-    };    
+    // };    
 
 
 

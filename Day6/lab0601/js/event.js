@@ -26,6 +26,14 @@
      do something;
     })
     */
+   
+   // // function을 쓰는 다른 방법
+   //     document.addEventListener("DOMContentLoaded", function(){
+   //     // alert("잘 들어오나?")
+   //     // Element를 const에 넣어서 선택
+   //     const boxEle = document.querySelector("#box");
+   //     const colorBtnEle = document.querySelector(".colorBtn");
+   //     const btnEle = document.querySelector("button");
 
     document.addEventListener("DOMContentLoaded", ()=>{
         // alert("잘 들어오나?")
@@ -33,6 +41,7 @@
         const boxEle = document.querySelector("#box");
         const colorBtnEle = document.querySelector(".colorBtn");
         const btnEle = document.querySelector("button");
+   
 
         // 각각의 element에 이벤트를 연결시킨다
         boxEle.addEventListener("click", function(e){
