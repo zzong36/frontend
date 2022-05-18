@@ -6,5 +6,5 @@
 function loadData(){
     let a = 2, b= 3;
     document.getElementById("start").innerHTML
-    = 기니피그 ${a} + ${b} = ${a+b};
+    = `기니피그 ${a} + ${b} = ${a+b}`;
 }

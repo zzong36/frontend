@@ -8,7 +8,7 @@
  * 파스칼(pascal): 대 - 대 - 소         ex) class UserInfo{}, function Person(){}
  *               생성자, 클래스
  * lower(전체소문자) : 전체를 소문자로   ex) let, const 예약어, 키워드 
- * upper(전체대문자) : 전체를 대문자로   ex) const PI = 3.14; const PI = Math.Pi; 
+ * upper(전체대문자) : 전체를 대문자로   ex) const PI = 3.14; const PI = Math.Pi; const LOCAl_HOST = "https://www.daum.net"; const DRIVER = "jdbc.oracle.driver.OracleDriver" 
  * 
  */
 
@@ -81,6 +81,11 @@ console.log("list=",list, " list2=", list2)
     //coffee 객체에는 없는 속성이나 js 최상위 객체인 Object에 있는 속성도 사용할 수 있기 때문에 true. js 모든 객체는 Object를 상속받음
     console.log("toString" in coffee); 
     */
+
+    /**
+     * 해당 객체에 속성이 ㅣㅆ는지 확인하는 ㅕㅇㄴ산자
+     * JavaScript에서는 ""와 ''이 같다.
+     */
 
     /**
      // 탬플릿 리터럴
