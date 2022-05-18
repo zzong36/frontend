@@ -1,3 +1,4 @@
-import{cardShuffle} from './black';
+import{cardShuffle} from './black.js';
 
-const root = document.querySelector()
+const root = document.querySelector("#root");
+root.innerHTML=cardShuffle();

@@ -1,4 +1,5 @@
-function cardShuffle(){
+// 함수 export
+export function cardShuffle(){
 
     // 하트(H), 클로버(C), 다이아몬드(D), 스페이드(S) 
     let shape = ["H", "C", "D", "S"];
@@ -25,6 +26,6 @@ function cardShuffle(){
     return card;
 };
 
-console.log(cardShuffle());
+// console.log(cardShuffle());
 
 
