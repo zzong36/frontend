@@ -21,5 +21,5 @@
 document.querySelector("div").addEventListener("click", function({type,target}){
 
     console.log("eval=", eval(1+2));
-    console.log(`<${target.tagName}>div테스트</${target.tagName}>`)
+    console.log(`<${target.tagName}>div테스트</${target.tagName}>`);
 });
