@@ -1,9 +1,18 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     font-family: 'Libre Baskerville', serif;
     font-size: 30px;
     color: white;
     background: url(blacksky.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -48,4 +57,14 @@ a{
 
 a:hover{
     background-color: #3A3845;
+}
+
+@media(max-width:770px){
+    #contents h1{
+        font-size: 50px;
+    }
+
+    #contents a{
+        font-size: 12px;
+    }
 }
