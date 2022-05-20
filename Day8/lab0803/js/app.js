@@ -105,10 +105,27 @@ function doJob(name, person){
                     result: `${name} success`
                 });
             }else{
-                reject(new Error(`${name} failde`));
+                reject(new Error(`${name} failed`));
             }
         }, 1000);
-    })
-}
+    });
+};
 
-doJob("김병관", {stamina:100});
+// doJob("김병관", {stamina:100});
+
+const hj = {stamina: 30};
+const execute = async function(){
+    try{
+        let v = await doJob("work", hj);
+        console.log(v.result);
+        v=await doJob("study", hj);
+        console.log(v.result);
+        v=await doJob("study", hj);
+        console.log(v.result);
+        v=await doJob("work", hj);
+        console.log(v.result);
+    } catch(e){
+        console.log(e)
+    }
+}
+execute();
