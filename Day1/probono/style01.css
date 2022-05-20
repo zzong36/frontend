@@ -1,0 +1,63 @@
+.navibar{
+    display: flex;
+    /* flex: 레이아웃 배치 전용 기능 */
+
+    flex-direction: row;
+    /* flex-direction
+        내부 아이템 배치 방향 결정
+        row는 가로로 배치
+        column은 세로로 배치
+        1) flex-direction: row;
+        2) flex-direction: column-reverse;
+        3) flex-direction: column;
+        4) flex-direction: row-reverse;
+    */
+
+    flex-wrap: wrap;
+    /* flex-wrap
+        Flexbox에 더 이상 한 줄에 담을 여유 공간이 없을 때 줄바꿈: wrap은 내부에 포함, nowrap은 flex 밖으로 빠져나간다*/
+
+    justify-content: space-between;
+    /* justify-content: 아이템 가로 정렬
+        flex-start: 좌측 정렬
+        flex-end: 우측 정렬
+        center: 가운데 정렬
+        space-between: 아이템이 일정한 간격으로 존재
+        space-around: 아이템 밖에도 간격 존재
+    */
+
+    align-items: center;
+    /* 아이템 수직 정렬 
+        1) stretch
+        2) flex-start
+        3) flex-end
+        4) center
+        5) baseline
+        */
+
+    border-bottom: solid;
+    border-color: #61A4BC;
+    }
+
+body{
+    margin: 0;
+    /* 가장 바깥쪽 테두리 */
+    font-family: 'Jua', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #1A132F;
+}
+
+.navbar_menu{
+    display: flex;
+    /* 목록 앞에 붙는 도형 모양 */
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 25px;
+}
+
+.navbar_menu li{
+    padding: 8px 30px;
+}

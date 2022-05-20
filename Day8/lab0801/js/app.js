@@ -67,26 +67,60 @@
  * 약속이 거부됐을 때 호출될 함수(onReject)
  */
 
-function promiseForHomework(mustDo){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log("doing homework~~~")
-            if(mustDo){
-                resolve({
-                    result: 'homework-result'
-                });
-            } else{
-                reject(new Error("Too lazy~!!"));
-            }
-        }, 2000);
-    });
-}
-const promiseA = promiseForHomework(true);
-// const promiseA = promiseForHomework(); // 이 경우 에러 발생
-console.log("promiseA 출력완료!!");
+// function promiseForHomework(mustDo){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("doing homework~~~")
+//             if(mustDo){
+//                 resolve({
+//                     result: 'homework-result'
+//                 });
+//             } else{
+//                 reject(new Error("Too lazy~!!"));
+//             }
+//         }, 2000);
+//     });
+// }
+// const promiseA = promiseForHomework(true);
+// // const promiseA = promiseForHomework(); // 이 경우 에러 발생
+// console.log("promiseA 출력완료!!");
 
-const promiseB = promiseForHomework();
-console.log("promiseB 출력완료!!");
+// const promiseB = promiseForHomework();
+// console.log("promiseB 출력완료!!");
 
-promiseA.then(v => console.log(v));
+// promiseA.then(v => console.log(v));
+
+const getHen = () => new Promise((resolve, reject)=>{
+    setTimeout(()=> resolve("암탉"), 1000)
+});
+
+const getEgg = (hen) => new Promise((resolve, reject)=>{
+    setTimeout(()=> resolve(`${hen} => 달걀`), 1000)
+});
+
+// // 아래는 에러 나게 만듦
+// const getEgg = (hen) => new Promise((resolve, reject)=>{
+//     setTimeout(()=> reject(new Error(`${hen} => 달걀`)), 1000)
+// });
+
+const cook = (egg) => new Promise((resolve, reject)=>{
+    setTimeout(()=> resolve(`${egg} => 계란후라이`), 1000)
+});
+
+// getHen()
+//     .then(hen => getEgg(hen))
+//     .then(egg => cook(egg))
+//     .then(meal => console.log(meal));
+
+// 이렇게 해도 함수를 호출 가능: Chaining
+getHen()
+    .then(getEgg)
+    .catch(error => {
+        return "빵"
+    })
+    .then(cook)
+    .then(console.log)
+
+
+
 
