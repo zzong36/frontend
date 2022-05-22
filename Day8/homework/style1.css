@@ -1,0 +1,58 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, p{
+    margin: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#main{
+    background: url(space.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#content{
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#content h1{
+    font-size: 70px;
+}
+
+#content p{
+    font-size: 23px;
+    margin-bottom: 16px;
+}
+
+#content a{
+    display: inline-block;
+    font-family: 'Questrial', sans-serif;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+#content a:hover{
+    background-color: #3A3845;
+
+}
