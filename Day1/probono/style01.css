@@ -35,8 +35,8 @@
         5) baseline
         */
 
-    border-bottom: solid;
-    border-color: #61A4BC;
+    border-bottom: solid 3px;
+    border-color: #90AACB;
     }
 
 body{
@@ -50,14 +50,86 @@ a{
     color: #1A132F;
 }
 
+.navbar_logo{
+    font-size: 40px;
+    color: #90AACB;
+}
+
+.navbar_logo a{
+    color: #90AACB;
+}
+
 .navbar_menu{
     display: flex;
     /* 목록 앞에 붙는 도형 모양 */
     list-style-type: none;
     padding-left: 0;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .navbar_menu li{
     padding: 8px 30px;
+}
+
+.navbar_menu li:hover{
+    background-color: #FFE2E2;
+}
+
+.navbar_submenu{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 15px;
+
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_submenu li{
+    padding: 8px 3px;
+}
+
+.navbar_submenu li:hover{
+    background-color: #FFE2E2;
+}
+
+.navbar_toggleBtn{
+    position: absolute;
+    right: 40px;
+    font-size: 24px;
+    color:#1A132F;
+    display: none;
+}
+
+@media screen and (max-width: 770px){
+    .navibar{
+        flex-direction: column;
+        padding: 8px 24px;
+    }
+
+    .navbar_menu{
+        display:none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_submenu{
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_toggleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active, .navbar_submenu.active{
+        display: flex;
+    }
+
 }
