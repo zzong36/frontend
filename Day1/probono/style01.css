@@ -72,7 +72,7 @@ a{
 }
 
 .navbar_menu li:hover{
-    background-color: #FFE2E2;
+    background-color: #F1EEE9;
 }
 
 .navbar_submenu{
@@ -89,7 +89,7 @@ a{
 }
 
 .navbar_submenu li:hover{
-    background-color: #FFE2E2;
+    background-color: #F1EEE9;
 }
 
 .navbar_toggleBtn{
