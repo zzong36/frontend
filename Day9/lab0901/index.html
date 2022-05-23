@@ -12,12 +12,12 @@
         <button id="button">보내기</button>
     </p>
     <!-- 다른 페이지가 이 페이지에서 동작하게 만듦 -->
-    <iframe src="next.html" width="300px" height="200px" frameborder="0" id="iframe">
+    <iframe src="next.html" width="300px" height="200px" frameborder="10" id="iframe">
 
     </iframe>
     <script>
         // 데이터를 보낼 페이지 - iframe
-        const frameWindow=document.getElementById("iframe");
+        const frameWindow=document.getElementById("iframe").contentWindow;
         // 메세지 입력을 위해 전송 버튼의 요소를 가져옴
         const message = document.getElementById("message");
         const button = document.getElementById("button");
