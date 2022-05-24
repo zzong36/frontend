@@ -9,8 +9,8 @@ export default{
     init(){
         console.log(tag, "init()");
         FormView.setup(document.querySelector('form'))
-            .on('@submit', e=> this.onSubmit(e.detail.input))
-            .on('@reset', e  => this.resetForm());
+        .on('@submit', e => this.onSubmit(e.detail.input))
+        .on('@reset', e => this.resetForm());
 
         // SearchResultView 셋업할때 #search-result 엘리먼트를 셋팅해준다.
         SearchResultView.setup(document.querySelector('#search-result'))

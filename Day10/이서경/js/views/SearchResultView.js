@@ -8,7 +8,7 @@ const SearchResultView = Object.create(View);
 // SearchResultView setting
 SearchResultView.setup = function(element){
     this.init(element);
-    this.searchRsrEl = element.querySelector("#search-result");
+    this.searchRstEl = element.querySelector("#search-result");
     return this;
 }
 

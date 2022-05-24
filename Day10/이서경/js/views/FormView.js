@@ -9,8 +9,8 @@ const FormView = Object.create(View);
 // 기본 세팅 작업
 FormView.setup=function(element){
     this.init(element);
-    this.inputElement=element.querySelector('[type=text');
-    this.resetElement=element.querySelector('[type=reset');
+    this.inputElement=element.querySelector('[type=text]');
+    this.resetElement=element.querySelector('[type=reset]');
     // 글 작성 시 이벤트 바인딩
     this.bindEvents();
 
