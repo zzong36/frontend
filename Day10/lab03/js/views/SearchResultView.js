@@ -1,3 +1,9 @@
+import View from './View.js'
+
+const tag = '[SearchResultView]'
+
+const SearchResultView=Object.create(View);
+
 SearchResultView.setup = function(element){
     this.init(element);
     this.searchRstE1 = element.querySelector("#search-result");
@@ -14,3 +20,9 @@ SearchResultView.render=function(data=[]){
 SearchResultView.getSearchResultHtml=function(data){
     console.log(tag, 'getSearchResultHtml ', data)
 }
+
+SearchResultView.getSearchResultHtml=function(data){
+
+}
+
+export default SearchResultView;

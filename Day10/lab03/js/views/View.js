@@ -11,6 +11,13 @@ export default{
     // 이벤트와 이벤트가 처리될 핸들러를 묶어준다.
     on(event, handler){
         this.element.addEventListener(event,handler);
+        return this; 
+    },
+
+    emit(event, data){
+        const evt = new CustomEvent(event, {detail:data});
+        this.element.dispatchEvent(evt);
+        return this;
     },
 
     // 숨기는 기능을 하는 것

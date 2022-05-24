@@ -1,5 +1,6 @@
 // FormView를 가져와서 setup메소드로 셋팅을 한다.
 import FormView from "../views/FormViews.js";
+import SearchResultView from "../views/SearchResultView.js"
 
 const tag = "[MainController]";
 
@@ -16,14 +17,14 @@ export default{
     }, 
 
     // 검색이 실행될 메소드를 구현한다.
-    search(){
+    search(query){
         console.log(tag, "search()", query);
     // 서치 결과를 처리할 메소드를 하나 더 호출해준다.
     this.onSearchResult([]);
     },
 
     onSubmit(input){
-        console.log(tag, 'onSubmit()'+input());
+        console.log(tag, 'onSubmit()', input);
         // 검색을 하고 엔터를 쳤을 경우니까 onSubmit이 일어났을 때
         // 검색하는 메소드가 호출되면 된다.
         this.search(input); 
@@ -35,7 +36,7 @@ export default{
     },
 
     onSearchResult(data){
-        SearchResultView
+        SearchResultView.render(data);
     }
 }
 
