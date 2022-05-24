@@ -21,6 +21,8 @@ export default{
         console.log(tag, "search()", query);
     // 서치 결과를 처리할 메소드를 하나 더 호출해준다.
     this.onSearchResult([]);
+    // SearchMenu 모델을 매핑시킨다.
+    // SearchResultView.
     },
 
     onSubmit(input){
